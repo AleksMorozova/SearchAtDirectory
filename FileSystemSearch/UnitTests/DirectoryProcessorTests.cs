@@ -1,18 +1,31 @@
-﻿using FileSystemSearch;
-using FileSystemSearch.FileWrapper;
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using FileSystemSearch;
+using FileSystemSearch.FileWrapper;
 
 namespace UnitTests
 {
     [TestClass]
-    public class SearchFilesTest
+    public class DirectoryProcessorTests
     {
+        [TestMethod]
+        public void SearchDirectoriesMethod()
+        {
+            Mock<IProcess> processorDependency = new Mock<IProcess>();
+
+            IFileWrapper fileWrapperDependency =
+                Mock.Of<IFileWrapper>(d => d.GetDirectiry("") == new string[1] { @"D:\Main\First" });
+
+            var sut = new DirectoryProcessor(processorDependency.Object, fileWrapperDependency).GetDirectories("");
+
+            var list = new List<string>();
+            list.AddRange(sut.Result);
+
+            Assert.IsTrue(list.Contains(@"D:\Main\First"));
+        }
+
         [TestMethod]
         public void SearchFilesMethod()
         {

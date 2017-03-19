@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FileSystemSearch.ConcreteProcessors
 {
-    public class ProccessReversed2 : IProcess
+    public class ProcessReversed2 : IProcess
     {
         public void ProcessFile(string path, IFileWrapper fileWrapper)
         {

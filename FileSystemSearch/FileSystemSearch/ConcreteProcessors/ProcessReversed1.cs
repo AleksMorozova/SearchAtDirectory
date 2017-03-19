@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace FileSystemSearch.ConcreteProcessors
 {
-    public class ProccessReversed1 : IProcess
+    public class ProcessReversed1 : IProcess
     {
         public void ProcessFile(string path, IFileWrapper fileWrapper)
         {
-            fileWrapper.WriteToFile(path, Program.ResultFilePath);
+            fileWrapper.WriteToFile(ReverseString(path), Program.ResultFilePath);
         }
 
         private string ReverseString(string path)

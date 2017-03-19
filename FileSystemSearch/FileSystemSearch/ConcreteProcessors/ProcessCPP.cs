@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FileSystemSearch.ConcreteProcessors
 {
-    public class ProcessorsCPP : IProcess
+    public class ProcessCPP : IProcess
     {
         public void ProcessFile(string path, IFileWrapper fileWrapper)
         {

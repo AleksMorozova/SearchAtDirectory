@@ -30,13 +30,13 @@ namespace FileSystemSearch
                     builder.RegisterType<ProcessAll>().As<IProcess>();
                     break;
                 case ActionType.cpp:
-                    builder.RegisterType<ProcessorsCPP>().As<IProcess>();
+                    builder.RegisterType<ProcessCPP>().As<IProcess>();
                     break;
                 case ActionType.reverse1:
-                    builder.RegisterType<ProccessReversed1>().As<IProcess>();
+                    builder.RegisterType<ProcessReversed1>().As<IProcess>();
                     break;
                 case ActionType.reverse2:
-                    builder.RegisterType<ProccessReversed2>().As<IProcess>();
+                    builder.RegisterType<ProcessReversed2>().As<IProcess>();
                     break;
                 default:
                     Console.WriteLine("Error type!");

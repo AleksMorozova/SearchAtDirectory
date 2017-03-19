@@ -66,11 +66,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ConcreteProcessors\SearchFilesTest.cs" />
-    <Compile Include="SearchDirectoriesTest.cs" />
+    <Compile Include="DirectoryProcessorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchFilesTest.cs" />
-    <Compile Include="WriteToFileTest.cs" />
+    <Compile Include="ProcessorsTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

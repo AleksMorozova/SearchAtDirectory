@@ -61,10 +61,10 @@
   <ItemGroup>
     <Compile Include="ActionType.cs" />
     <Compile Include="ArgumentsValidator.cs" />
-    <Compile Include="ConcreteProcessors\ProccessReversed1.cs" />
-    <Compile Include="ConcreteProcessors\ProccessReversed2.cs" />
+    <Compile Include="ConcreteProcessors\ProcessReversed1.cs" />
+    <Compile Include="ConcreteProcessors\ProcessReversed2.cs" />
     <Compile Include="ConcreteProcessors\ProcessAll.cs" />
-    <Compile Include="ConcreteProcessors\ProcessorsCPP.cs" />
+    <Compile Include="ConcreteProcessors\ProcessCPP.cs" />
     <Compile Include="DirectoryProcessor.cs" />
     <Compile Include="FileWrapper\FileWrapper.cs" />
     <Compile Include="FileWrapper\IFileWrapper.cs" />
