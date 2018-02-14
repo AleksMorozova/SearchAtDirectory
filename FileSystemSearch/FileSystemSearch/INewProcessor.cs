@@ -8,5 +8,6 @@ namespace FileSystemSearch
 {
     interface INewProcessor
     {
+        void ProcessFile(string filePath);
     }
 }
