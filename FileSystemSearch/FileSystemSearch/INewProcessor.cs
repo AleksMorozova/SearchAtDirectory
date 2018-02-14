@@ -9,6 +9,5 @@ namespace FileSystemSearch
     interface INewProcessor
     {
         void ProcessFile(string filePath);
-        void ReadFile(string filePath);
     }
 }
