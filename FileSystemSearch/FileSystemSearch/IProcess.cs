@@ -9,6 +9,6 @@ namespace FileSystemSearch
 {
     public interface IProcess
     {
-        void ProcessFile(string path, IFileWrapper _fileWrapper);
+        void ProcessFile(string filePath, IFileWrapper _fileWrapper);
     }
 }
