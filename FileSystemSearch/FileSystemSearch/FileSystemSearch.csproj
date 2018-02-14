@@ -68,6 +68,7 @@
     <Compile Include="DirectoryProcessor.cs" />
     <Compile Include="FileWrapper\FileWrapper.cs" />
     <Compile Include="FileWrapper\IFileWrapper.cs" />
+    <Compile Include="INewProcessor.cs" />
     <Compile Include="IProcess.cs" />
     <Compile Include="ParserHelper\CommandLineArguments.cs" />
     <Compile Include="Program.cs" />
